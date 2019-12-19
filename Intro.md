@@ -1,6 +1,6 @@
 ---
 title: Introduction
-layout: template
+layout: machine
 filename: Into.md FILE HERE
 --- 
 
