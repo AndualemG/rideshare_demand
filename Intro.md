@@ -1,6 +1,6 @@
 ---
 title: Introduction
-layout: machine
+layout: jekyll-theme-time-machine
 filename: Into.md FILE HERE
 --- 
 
