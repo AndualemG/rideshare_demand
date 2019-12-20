@@ -1,6 +1,7 @@
 ---
-title: Introduction
-theme: jekyll-theme-minimal 
-filename: Into.md
+layout: page
+title: About
+permalink: /about/
 ---
-## Introduction
+
+I'm a work-from-home father who eats way too much pizza.
