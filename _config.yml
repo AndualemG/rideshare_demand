@@ -1,2 +1,7 @@
 theme: jekyll-theme-minimal
 title: "Impacts of Rideshare: Predicting Inter-City Mobility Patterns in the Absence of Data"
+---
+layout: page
+title: About
+permalink: /about/
+---
