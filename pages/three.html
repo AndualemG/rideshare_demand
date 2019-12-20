@@ -1,0 +1,31 @@
+<form action="index.html" method="GET">
+  <button type="introduction" formaction="../index.html">Home</button>. <button type="introduction" formaction="../about.html">About me</button>. <button type="introduction" formaction="https://www.linkedin.com/in/andualem-girma/">LinkedIn</button>
+</form>
+
+
+<header>
+  <h1>Methodology</h1>
+  <nav role='navigation'>
+<section id="home">
+  <div class="illustration"></div>
+  <p align="justify" >Rideshare companies like Uber and Lyft have experienced tremendous growth over the last ten years. While some proponents believed this growth would result in reduced congestion by converting round trips to one-way trips, it appears the opposite is true - rideshare seems to be increasing the vehicle miles driven in cities . This raises an important question for key stakeholders in this space: where and when do we anticipate this increase in road usage to occur? For transportation planners and providers, public and private alike, this insight is highly impactful for several reasons. For the public sector, are high-flow times and places not well served by public transportation, and does the current infrastructure support rideshare services adequately? Changing bus routes, increasing the density of bus-stops, or frequency of car-waiting zones in these origin-destination (OD) pairs may be an effective policy choice. For private transportation companies, identification of these predicted geo-temporal peak volume routes could lead to further investigation of rider base needs for these routes and uncover potential new market offerings for these peaks. <br/><br/>
+
+Predicting rideshare demand isn’t a new problem though. Companies like Uber and Lyft do so every day in order to price their trips; however, the optimal approach to modeling this demand is still very much a topic of research. Ke et al. developed a custom deep learning architecture, named the fusion convolutional long short-term memory network (FCL-Net), to better capture the spatio-temporal characteristics of rideshare demand.  It stacked multiple convolutional long short-term memory (LSTM) layers, standard LSTM layers, and convolutional layers - and showed significant improvement when compared to traditional benchmark algorithms like artificial neural networks and standard LSTMs. However, this class of problem - demand forecasting - isn’t limited to ridesharing, and has been researched for many other applications. Chang et al. tested Gradient Tree boosting as a method of predicting bike demand as well as computer equipment demand.  The algorithm showed consistently better results than other standard prediction algorithms like support vector regression and multi-layer perceptron, across two very different datasets. </p>
+</section>
+<section id="clients">
+  <h2>Objective</h2>
+  <p align="justify">Our project aims to build on this work and provide rideshare insights to those without access to rideshare data by building a demand model for rideshare which can be employed in any US city. Covered in more detail below, our model for explaining variance in OD by time of day trips is trained on Chicago rideshare data taking into account the socio-geographic characteristics of the city and temporal information such as day-in-week, time-of-day and weather information. </p>
+</section>
+<header>
+  <h1>Methods and Results</h1>
+  <nav role='prep'>
+<section id="clients">
+  <h2>Dataset</h2>
+  <p align="justify">Our demand model relied on four primary sources of data; rideshare data from the Chicago Data Portal, census data from the US Census Bureau (USCB), weather data from Weather Underground, and Place data from Google Maps Places API. </p>
+  <p align="justify">Chicago Data Portal contains 100M+ records with 80+ columns about Uber and Lyft rides in the city of Chicago. The data was down sampled from over a year of records to the month of September 2019 with roughly 4.3M records. The time range was selected to make sure the data is recent and relevant. Even with reducing the size of the data a GPU had to be used for data cleaning and merging. The trip pickup and drop-off latitude and longitudes and the pickup and drop-off were retained for all September 2019 ride records. </p>
+  <p align="justify">The latest census data (2010) was used to collect information on the population of Chicago such as car ownership, age statistics, population density, use of public transit and the average income of the area. This data was pulled at the tract level. Tracts, defined by the USCB, are small (in cities) contiguous geographic areas which contain approximately 5000 to 10,000 people.</p>
+  <p align="justify">The Google Maps API was used to pull Points Of Interest (POIs). POIs are geolocation tags which include the name a place and what type of place it is. Within Chicago there were 104 unique location types and 34k unique places of interest. These POIs are plotted across Chicago Tracts in the figure to the right.</p>
+  <p align="justify">Weather plays an important role in predicting the number of rides to expect between tracts. The weather data was sourced from World Weather Online. The temperature, precipitation, wind, wind-chill and humidity were retained for the hour across the city of Chicago (assuming consistency in conditions geographically but not temporally).</p>
+</section>
+
+<h2 align=center><a href="two.html"">Prev Page </a><a> | </a><a href="four.html">  Next Page</a></h2>
