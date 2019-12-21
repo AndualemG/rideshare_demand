@@ -24,7 +24,7 @@ We performed a compute intensive merge of the POIs, census and weather tables at
   <p align="justify">For modeling, it was important to our team to develop a baseline to compare our boosted regressor and random forest models against. We used the Extended Radiation Model (ERM) for this purpose. For the ERM we used the population, POIs, distance and existing trip data as our input features. We used daily trip data and assumed an alpha value ranging from 0.1 to 2.0 from which we selected 0.1. We also experimented with taking different time aggregations of the data. Hourly aggregation resulted in unreasonable predictions, so we decided to aggregate by day. We also narrowed our selected days to weekdays only (Monday to Thursday) because of their relatively similar trends in distribution. This returned a CPC of 0.35. </p>
   <section class="sec-intro">
     <div class="row">
-      <img src="https://i.imgsafe.org/d7/d79f80d5d2.jpeg" alt="Intution"/>
+      <img src="https://i.imgsafe.org/d7/d7a8d3dd63.png" alt="Intution"/>
     </div>
     <div class="col-4">
   <p align="justify">After observing heavy skew in our data, with the vast majority of rideshare demand being equal to 1 for a numbers for an OD pair at a given time, we considered running two models in series; a classification model to separate few trips vs many trips and then a MPL Regressor to predict the count of trips for the many-trip classified subset. This was an attempt to further reduce prediction skew. Sadly, this approach yielded an only slight improvement above baseline with a CPC of 0.41.</p>
