@@ -13,7 +13,7 @@
 We performed a compute intensive merge of the POIs, census and weather tables at the many levels of temporal granularity shown in the table below. We then performed exploratory data analysis inspecting the average and distribution of record level counts at each of these levels of granularity. As granularity reduced, we saw a better spread on the distribution of rideshare demand, which could lead to more accurate predictions. However, there was also an important tradeoff to be considered between working with the lower levels of granularity that were more computationally manageable, and attempting to incorporate detailed information at the level at which the demand modelling would be useful for practical applications. For this reason, we retained these varying levels of granularity and tested them throughout our modeling process. </p>
 <section class="sec-intro">
     <div class="row">
-      <img src="https://i.imgsafe.org/d6/d6c39db61a.png" alt="Intution"/>
+      <img src="https://i.imgsafe.org/d6/d6dc27acf8.png" alt="Intution"/>
     </div>
     <div class="col-4">
 <p align="justify" >We then normalized the data - bounding outliers, demeaning and dividing by the standard deviation per variable - for the purpose of doing PCA later, as well as for testing different regression models. After normalization, we used PCA to reduce feature dimensionality from the initial 315 features to 127, while preserving 95% of the predictive power.</p>
