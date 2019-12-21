@@ -13,7 +13,7 @@
 We performed a compute intensive merge of the POIs, census and weather tables at the many levels of temporal granularity shown in the table below. We then performed exploratory data analysis inspecting the average and distribution of record level counts at each of these levels of granularity. As granularity reduced, we saw a better spread on the distribution of rideshare demand, which could lead to more accurate predictions. However, there was also an important tradeoff to be considered between working with the lower levels of granularity that were more computationally manageable, and attempting to incorporate detailed information at the level at which the demand modelling would be useful for practical applications. For this reason, we retained these varying levels of granularity and tested them throughout our modeling process. </p>
 <section class="sec-intro">
     <div class="row">
-      <img src="https://i.imgsafe.org/d6/d6b3038ff4.png" alt="Intution"/>
+      <img src="https://i.imgsafe.org/d6/d6c39db61a.png" alt="Intution"/>
     </div>
     <div class="col-4">
 <p align="justify" >We then normalized the data - bounding outliers, demeaning and dividing by the standard deviation per variable - for the purpose of doing PCA later, as well as for testing different regression models. After normalization, we used PCA to reduce feature dimensionality from the initial 315 features to 127, while preserving 95% of the predictive power.</p>
@@ -24,7 +24,7 @@ We performed a compute intensive merge of the POIs, census and weather tables at
   <p align="justify">For modeling, it was important to our team to develop a baseline to compare our boosted regressor and random forest models against. We used the Extended Radiation Model (ERM) for this purpose. For the ERM we used the population, POIs, distance and existing trip data as our input features. We used daily trip data and assumed an alpha value ranging from 0.1 to 2.0 from which we selected 0.1. We also experimented with taking different time aggregations of the data. Hourly aggregation resulted in unreasonable predictions, so we decided to aggregate by day. We also narrowed our selected days to weekdays only (Monday to Thursday) because of their relatively similar trends in distribution. This returned a CPC of 0.35. </p>
   <section class="sec-intro">
     <div class="row">
-      <img src="https://i.imgsafe.org/d6/d6a58718bf.png" alt="Intution"/>
+      <img src="https://i.imgsafe.org/d6/d6c3a21633.png" alt="Intution"/>
     </div>
     <div class="col-4">
   <p align="justify">Chicago Data Portal contains 100M+ records with 80+ columns about Uber and Lyft rides in the city of Chicago. The data was down sampled from over a year of records to the month of September 2019 with roughly 4.3M records. The time range was selected to make sure the data is recent and relevant. Even with reducing the size of the data a GPU had to be used for data cleaning and merging. The trip pickup and drop-off latitude and longitudes and the pickup and drop-off were retained for all September 2019 ride records. </p>
