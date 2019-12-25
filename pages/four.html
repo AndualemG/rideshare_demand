@@ -1,46 +1,24 @@
-<div class="menu_button">
-  <button id="menubutton"
-          aria-haspopup="true"
-          aria-controls="menu2">
-    WAI-ARIA Quick Links
-  </button>
-  <ul id="menu2"
-      role="menu"
-      aria-labelledby="menubutton">
-    <li role="none">
-      <a role="menuitem" href="https://www.w3.org/">
-        W3C Home Page
-      </a>
-    </li>
-    <li role="none">
-      <a role="menuitem" href="https://www.w3.org/standards/webdesign/accessibility">
-        W3C Web Accessibility Initiative
-      </a>
-    </li>
-    <li role="none">
-      <a role="menuitem" href="https://www.w3.org/TR/wai-aria/">
-        Accessible Rich Internet Application Specification
-      </a>
-    </li>
-    <li role="none">
-      <a role="menuitem" href="https://www.w3.org/TR/wai-aria-practices/">
-        WAI-ARIA Authoring Practices
-      </a>
-    </li>
-    <li role="none">
-      <a role="menuitem" href="https://www.w3.org/TR/wai-aria-implementation/">
-        WAI-ARIA Implementation Guide
-      </a>
-    </li>
-    <li role="none">
-      <a role="menuitem" href="https://www.w3.org/TR/accname-aam-1.1/">
-        Accessible Name and Description
-      </a>
-    </li>
-  </ul>
-  <script type="text/javascript">
-    window.onload=function() {
-    var menubutton = new Menubutton(document.getElementById('menubutton'));
-    menubutton.init();
-  </script>
-</div>
+<form action="index.html" method="GET">
+  <button type="introduction" formaction="../index.html">Home</button>. <button type="introduction" formaction="../about.html">About me</button>. <button type="introduction" formaction="https://www.linkedin.com/in/andualem-girma/">LinkedIn</button>
+</form>
+
+
+<header>
+  <h1>Future work and conlusion</h1>
+  <nav role='navigation'>
+<section id="home">
+  <div class="illustration"></div>
+  <p align="left" >Through this work we see that a Gradient Boosting regressor aggregated at the hour-weekday level most accurately predicts the number of rides. See Appendix A for the full table of results by testing method, feature transformation, and selection criteria. The various approaches to transform the assimilated data, including treating outliers, principal component analysis to reduce dimensionality, and log transformations were all contributing factors to increase model performance. Our model beat the baseline radiation model by a large margin, although more could be done to tune the hyperparameters of the gradient boosted regressor. We also found that the gains made from the PCA show that many of the features in the feature set we used were highly correlated with respect to the distribution patterns in the city of Chicago. <br/><br/>
+<h1>Real-world implications</h1>
+The goal of this project was to construct a transportation demand model, using location and time characteristics to predict demand for rides in any US city. Our model was trained on data from the city of Chicago, but we see its value residing in the model’s ability to predict the number of rides in any date-time combination for any US city. Improving transportation network providers and planners understanding of the characteristics of rideshare activity in their city of interest enables more informed decision making about investments in infrastructure (roads, bus stations, etc.) and services (more buses, new mobility companies, etc.). This primary value is derived from the fact that the model can also be used in cities or regions where no historical ride-share data exists to model the demand.</p>
+  <p align="left">While we already talked about which accuracy measurements were best to understand this model’s performance, all measurements we considered focus on internal validity. We believe an exciting and necessary next step in this work is to test its generalizability and external validity. The model has already been refined for the Chicago dataset, so testing - and probably retraining - it on different cities is an impactful avenue for future work. We envision building a more robust, standardized model for all cities, with additional neural network layers to learn weights on the differences between cities. In summary, we see immediate real-world value this model could provide through directional insights to transportation decision makers. Beyond the current state of the model and noted areas for improvement, we also see great value in our final feature set and data transformation pipeline. Its ability to capture inter-city differences may be very useful in future transportation demand related analysis. </p>
+<header>
+  <h1>References</h1>
+  <nav role='prep'>
+<section id="clients">
+  <li align="left">  "Disruptive Transportation: The Adoption, Utilization, and Impacts of Ride-Hailing in the United States" 12 Oct. 2017, Link: https://trid.trb.org/view/1485471. Accessed 04 Dec. 2019. </li>
+  <li align="left">  "Short-Term Forecasting of Passenger Demand under On-Demand Ride Services: A Spatio-Temporal Deep Learning Approach", By: Jintao Ke, Hongyu Zheng, Hai Yang, Xiqun (Michael)Chen, 20 Jun. 2017, Link: https://arxiv.org/abs/1706.06279. Accessed 16 Dec. 2019. </li>
+  <li align="left">  "Forecasting demand with limited information using Gradient Tree Boosting.", by Stephan Chang and Felipe Meneguzzi Link: https://pdfs.semanticscholar.org/f170/60ab4315997dd027edbe1a9b0aa7538ab912.pdf. Accessed 16 Dec. 2019.</li>
+<h2 align=center><a href="three.html"">Please leave your comments here!! </a></h2> 
+
+<h2 align=center><a href="three.html"">Prev Page </a></h2>
