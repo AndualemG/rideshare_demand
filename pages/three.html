@@ -10,17 +10,17 @@
   <div class="illustration"></div>
   <p align="left" >Overall the gradient boosted model performed the best of all 4 methods tested when evaluating by CPC. To better understand which aspects of the model worked well, and its pitfalls, we looked into various distributions of its results. </p>
   <div class="row">
-      <img src="https://i.imgsafe.org/3f/3f3c849e08.png" alt="Intution"/>
+      <img src="https://i.imgur.com/LNyZ0Ye.png" alt="Intution"/>
     </div>
 <p align="left"> When predicting the relationship between the distance of trips and the log of the number of trips, the model performed very well - following the actual values closely. This would seem to indicate that the model was able to capture the spatial component to rideshare demand.</p>
 <p align="left"> To better understand the temporal component, we graphed the CPC across different hours of the day and days of the week. The figures below indicate that our model had lower CPC values between 5 - 8a.m., as well as for all weekdays (days 0 - 4). Weekdays having lower CPC values makes intuitive sense, as those days are much more prone to having large fluctuations in demand. Addressing low CPC values during the morning would be another avenue for potential improvement, as they’re directly a result of 5a.m. being peak dropoff time at the Chicago airport, and 8a.m. being the time with the greatest spread of ride demand values. We also found that rounding the predicted value to the nearest integer slightly increased CPC values - as many estimates that should’ve been two rides or higher, oftentimes were in the 1.5 - 1.9 range. </p>
   <div class="row">
-      <img src="https://i.imgsafe.org/3f/3f3d8afa5b.png" alt="Intution"/>
+      <img src="https://i.imgur.com/91UkQzg.png" alt="Intution"/>
     </div>
 
 <p align="left">To better understand how to improve predicted values in the future, we graphed the total number of rides per day-of-week and hour, against the predicted totals. In the figures below, it’s clear that the gradient boosting model captures the overall shape of rideshare demand, but consistently predicts values too low. This is likely due to the fact that the number of rides for a given OD pair on some time/day is equal to one, 72.4% of the time. This means an area for great potential improvement is tuning the model to better recognize inputs that have more than one ride.  </p>
   <div class="row">
-      <img src="https://i.imgsafe.org/3f/3f3e0742d1.png"/>
+      <img src="https://i.imgur.com/2YVn18s.png"/>
     </div>
 
 
